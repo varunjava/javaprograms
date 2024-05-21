@@ -7,6 +7,14 @@ public class TestJenkins {
     @Test
     public void pro()
     {
-        System.out.println("Its Working===================");
+        String env=System.getProperty("environment");
+        String browser=System.getProperty("browser");
+
+        System.out.println(env);
+        if (browser.equals("chrome")){
+        System.out.println("chrome browser execution");
+        } else if (browser.equals("firefox")) {
+            System.out.println("firefox execution");
+        }
     }
 }

@@ -7,6 +7,7 @@ public class AddRemove
     public static void main(String[] args)
     {
         int[] a={5,6,4,6,3,2};
+        addElement(a, 10);
         System.out.println(maxNum(a));
         System.out.println(minNum(a));
         repeat(a,2);
@@ -30,6 +31,7 @@ public class AddRemove
                 a[i]=n;
             }
         }
+        System.out.println(Arrays.toString(a));
     }
 
     public static int maxNum(int[] a)
